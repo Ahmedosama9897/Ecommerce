@@ -1,0 +1,27 @@
+<section>
+    <div class="mt-5"><p class="text-white">brand</p></div>
+    <h1 class="text-center text-main my-3 fw-bolder">All Brands</h1>
+    <div class="container">
+    <div class="row g-3 my-lg-4 ">
+        @for (brand of brandList.slice(0,48) ; track brand._id) {
+        <div class="col-md-3">
+
+            <div class="product p-2 ">
+             
+                    <img [src]="brand.image" class="w-100" [alt]="brand.name">
+
+
+                    <div class="d-flex justify-content-center align-items-center my-3 bg-success-subtle">
+
+                     <h3 class="h6 text-main fs-5 fw-bolder">{{brand.name}}</h3>
+                        
+                    </div>
+                
+
+
+            </div>
+        </div>
+        }
+    </div>
+    </div>
+ </section>
